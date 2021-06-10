@@ -1,7 +1,5 @@
 # Python Script for Rating Anime because I have no life
 
-story, characters, art, sound, enjoyment = [0.0 for _ in range(5)]
-
 story = float(input("Input Story Score: "))
 characters = float(input("Input Characters Score: "))
 art = float(input("Input Art Score: "))
@@ -15,4 +13,6 @@ def calculate_score(s, c, a, h, e):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print(f"Your Rating is {calculate_score(story, characters, art, sound, enjoyment)}")
+    final_score = calculate_score(story, characters, art, sound, enjoyment)
+    print(f"Your Rating is {final_score} which rounds to "
+          f"{round(final_score,1)}")
