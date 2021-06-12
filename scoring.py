@@ -14,5 +14,7 @@ def calculate_score(s, c, a, h, e):
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     final_score = calculate_score(story, characters, art, sound, enjoyment)
+    print(f"Story: {int(story)} | Characters: {int(characters)} "
+          f"| Art: {int(art)} | Sound: {int(sound)} | Enjoyment: {int(enjoyment)}")
     print(f"Your Rating is {final_score} which rounds to "
           f"{round(final_score,1)}")
